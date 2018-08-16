@@ -6,6 +6,10 @@
     </head>
 
     <body>
-        <p><?php echo "Silvio" ?></p>
+        <p><?php 
+        //comentario
+        echo "Silvio" 
+        ?>
+        </p>
     </body>
 </html>
