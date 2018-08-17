@@ -13,16 +13,22 @@
     <body>
         <?php 
             // Multiplicacao e Divisao
+            echo "Trimestre: " .$salario * $meses . '<br>';
 
             // Exponencial
+            echo "Exponencial: " . pow(8,2) . '<br>';
 
             // Raiz Quadrada
+            echo "Raiz quadrada: " . sqrt(36) . '<br>';
 
             // Randômico Generica
+            echo "Randomico: " . rand() . '<br>';
 
             // Randômico entre um intervalo
+            echo "Randomico: " . rand(1,10) . '<br>';
 
             // Valor absoluto
+            echo "Absoluto: " . abs(210);
             
         ?>
     </body>
