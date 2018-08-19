@@ -26,27 +26,45 @@
             div {
                 margin-bottom:1em;
                 margin-right:2em;
-                width:50px;
+                width:150px;
                 height:50px;
                 padding:25px;
                 font-size:12px;
-                float:left;
+                /* faz todos os elementos da div ficarem um ao lado do outro */
+                /* float:left; */
             }
 
             .janela1 {
                 background-color:rgb(0,153,204);	
+                float: right;
+                width: 50px;
+                /* se eu almentar essa altura e quiser que os outros baixem
+                tem que colocar clear:height no terceiro elemento */
+                height: 200px;
             }
 
             .janela2 {
                 background-color:rgb(255,204,51);
+                /* vai fazer o proximo elemento ficar por baixo... o verde */
+                float: left;
+                width: 50px;
+                /* se aumentar o amarelo ele passa por cima do verde
+                para resolver isso aplica-se clear:both no verde
+                daí ele não vai ter nem um elemento a direita nem a esquerda */
+                height: 250px;
+
             }
 
             .janela3 {
                 background-color:rgb(153,204,51);
+                /* basta dar um clear que ele sai debaixo do amarelo */
+                clear: both;
             }
 
             .janela4 {
                 background-color:rgb(255,102,51);
+                /* Fazer o elemento descer */
+                /* clear:left; */
             }
 
             .janela5 {
