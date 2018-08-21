@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title> 
+        <script src="jquery-3.2.1.min.js"></script>
+    </head>
+
+    <body>
+    	<nav>
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+
+        <br>
+        <a href="#">Paraguay</a>
+        
+        <!-- scripts -->
+       <script>
+            $(function(){
+                $("nav a").css("display", "block");
+                $("a:odd").css("background-color", "green");
+                $("a:even").css("background-color", "red");
+            
+        });
+       </script>
+        
+                
+    </body>
+</html>

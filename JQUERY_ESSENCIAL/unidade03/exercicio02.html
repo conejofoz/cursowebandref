@@ -12,12 +12,88 @@
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
         </nav>
+
+        <br>
+        <nav id="menu">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        <br>
+        <nav id="menu1">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        <br>
+        <nav id="menu2">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        <br>
+        <nav id="menu3">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        <br>
+        <nav id="menu4">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        <br>
+        <nav id="menu5">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        <br>
+        <br>
+        <a href="#">Paraguay</a>
         
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
         <script>    
         	$( function() {
-				
+				/*contar quantos elementos tem na pagina*/
+                alert("O seu docomento tem " + $("nav a").length + " links dentro da tag nav");
+				alert("O seu docomento tem " + $("a").length + " links no total");
+
+                /*mudar a propriedade cor do elemento*/
+                $("nav a").css("color", "red");
+
+                /*tirar o sublinhado dos links*/
+                $("a").css("text-decoration", "none");
+
+
+                /*fazer as duas coisas na mesma linha*/
+                $("a").css("color", "green").css("display","block");
+
+                /*mudar uma propriedade só do primeiro elemento*/
+                $("#menu a:first").css("color", "red");
+                
+                /*mudar uma propriedade só do ultimo elemento*/
+                $("#menu1 a:last").css("color", "red");
+                
+                /*mudar uma propriedade dos elemento pares*/
+                $("#menu2 a:odd").css("color", "red");
+
+                /*mudar uma propriedade dos elemento impares*/
+                $("#menu3 a:even").css("color", "blue");
+
+                /*mudar uma propriedade do segundo elemento por exemplo*/
+                $("#menu4 a:nth(2)").css("font-size", "20px");
+
+                /*mudar uma propriedade do elemento que contem uma informação*/
+                $("a:contains('Paraguay')").css("font-family", "Courier").css("font-size","2em");
 			})
         </script>   
                 
