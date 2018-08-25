@@ -6,6 +6,23 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            $(function(){
+                $("#cursohtml").click(function(){
+                    alert("clicou");
+                })
+
+                function mostrarMensagem(){
+                    alert("passou o mouse");
+                    $("#cursocss").off("mouseover", mostrarMensagem)    
+                    /*
+                    para matar qualquer elemento dessa div
+                    $("#cursocss").off()    
+                    */
+                }
+
+                $("#cursocss").on("mouseover", mostrarMensagem)
+                
+            })
 					
 		</script>        
     </head>

@@ -16,15 +16,18 @@
 			})
 			
 			function esconderObjeto() {
-			
+				$("#janela").hide(300)
 			}
 
 			function mostrarObjeto() {
-				
+				$("#janela").show(500, function(){
+					$("#janela").css("background-color", "yellow")
+					alert("tianâ...apareceu e amarelou")
+				})
 			}
 
 			function reverterObjeto() {
-			
+				$("#janela").toggle()
 			}
 		</script>        
     </head>

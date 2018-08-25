@@ -10,23 +10,18 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-            function aplicarCorAzul(){
-                $("#janela").css("background-color", "blue")
+            function aplicarCor(obj){
+                $("#janela").css("background-color", obj.data.cor)
+                $("#janela").css("width", obj.data.largura)
             }
 
-            function aplicarCorVermelho(){
-                $("#janela").css("background-color", "red")
-            }
-
-            function aplicarCorVerde(){
-                $("#janela").css("background-color", "green")
-            }
+            
 
             /*função executada depois que carregar todo o DOM*/
             $(function(){
-                $("#botaoazul").on("click", aplicarCorAzul)
-                $("#botaovermelho").on("click", aplicarCorVermelho)
-                $("#botaoverde").on("click",aplicarCorVerde)
+                $("#botaoazul").on("click",{cor:'blue', largura:'250px'}, aplicarCor)
+                $("#botaovermelho").on("click",{cor:'red', largura:'350px'}, aplicarCor)
+                $("#botaoverde").on("click",{cor:'green', largura:'450px'},aplicarCor)
             })
 
 	 	</script>        
