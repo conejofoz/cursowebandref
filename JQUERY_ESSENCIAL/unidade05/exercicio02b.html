@@ -11,7 +11,11 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+                /*COMO FALAR COM O PAI DO ELEMENTO*/
+                $("#janelinha").offsetParent().css("background-color", "yellow");
+                
+                /*COMO FALAR COM O PAI DO PAI DO ELEMENTO*/
+                $("#janelinha").offsetParent().offsetParent().css("background-color", "green");
 			});
 		</script>        
     </head>
