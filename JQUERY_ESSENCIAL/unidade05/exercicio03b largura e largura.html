@@ -38,10 +38,12 @@
         <script>		
 			$(function(e){
 
-                var alturaJanela = $(window).height();
-                $("#primeira").css("height", alturaJanela);
-                $("#segunda").css("height", alturaJanela);
-                $("#terceira").css("height", alturaJanela);
+                function redimencionar{
+                    var alturaJanela = $(window).height();
+                    $("#primeira").css("height", alturaJanela);
+                    $("#segunda").css("height", alturaJanela);
+                    $("#terceira").css("height", alturaJanela);
+                }
 
                 /*primeiro botao*/
                 $("nav li:first-child").click(function(e){
@@ -57,6 +59,13 @@
                 $("nav li:last-child").click(function(e){
                     $("html, body").animate({scrollTop: $("#terceira").offset().top}, 1000);
                 });
+
+                $(window).resize(function(e){
+                    redimencionar();
+                })
+
+                redimencionar();
+
             });
 		</script>   
     </head>

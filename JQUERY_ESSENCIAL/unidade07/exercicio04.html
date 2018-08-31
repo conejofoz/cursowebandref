@@ -9,8 +9,13 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {			
+            function moverObjeto(){
+                $("#janela").animate({left:300,top:200}, 100, "swing")
+            }
 
+			$( function(e) {			
+                $("#direita").on("click", moverObjeto)
+               //$("#janela").click(moverParaDireita)
 			})
 
 		</script>        
