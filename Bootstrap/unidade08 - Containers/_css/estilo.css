@@ -1,0 +1,12 @@
+@font-face {
+
+    font-family: "infinity";
+    src: url("infinity.ttf") format("truetype");
+
+    }
+
+
+.infinity-font{
+  font-family: "infinity";  
+  color: lightgreen;
+     } 
